@@ -1,0 +1,232 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./images/bg_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(3, 167, 208, 0.7);
+    padding: 20px 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #87ceeb;
+}
+
+/* Section */
+section {
+    padding: 150px 0 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Portfolio */
+.portfolio-item {
+    text-align: center;
+    background-color: linear-gradient(180deg, rgba(156, 194, 232, 0.51) 28%, rgba(121, 143, 210, 1) 100%);
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: rgba(3, 167, 208, 0.7);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(117, 231, 241, 0.51) 28%, rgb(29, 175, 201) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Hero */
+#hero {
+    position: relative;
+    background-image: url('./images/hero_bg.jpeg');
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(1px);
+    opacity: 80%;
+}
+
+/* Add the following styles */
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-text {
+    text-align: right;
+    margin-left: 800px;
+    margin-top: 100px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(13, 66, 135, 0.5);
+}
+
+.hero-text .subtitle {
+    font-size: 1.5em;
+    color: #1f75e6;
+}
+
+
+/* Honors */
+.honors-list {
+    margin-top: 30px;
+}
+
+.honors-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.honors-list ul li {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    /* Initially, set border color to transparent */
+}
+
+.honors-list ul li:hover {
+    transform: translateY(-5px);
+    border-color: rgba(3, 167, 208, 0.7);
+}
+
+/* Resolution */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    section {
+        padding: 100px 0 30px;
+    }
+}
+
+
+
+/* Form  */
+
+
+/* Form styles */
+.fan-request-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #03A7D0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0378a6;
+}
+
